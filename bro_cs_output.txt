@@ -1,0 +1,5 @@
+# Output of https://github.com/CrowdStrike/cs-bro/blob/master/bro-scripts/msb/detect-ms15-034.bro
+
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	fuid	file_mime_type	file_desc	proto	note	msg	sub	src	dst	p	n	peer_descr	actions	suppress_for	dropped	remote_location.country_code	remote_location.region	remote_location.city	remote_location.latitude	remote_location.longitude
+#types	time	string	addr	port	addr	port	string	string	string	enum	enum	string	string	addr	addr	port	count	string	set[enum]	interval	bool	string	string	string	double	double
+1429633952.029757	CvzJfuQvMSWPj6wQ1	10.10.10.10	59073	10.10.0.219	80	-	-	-	tcp	CrowdStrike::MS15034_Server_Crash	10.10.0.219 may have crashed due to MS15-034	Range used: bytes=18-18446744073709551615	10.10.10.10	10.10.0.219	80	-	bro	Notice::ACTION_LOG	3600.000000	F	-	-	-	-	-
